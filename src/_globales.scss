@@ -1,0 +1,33 @@
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: $h1;
+}
+h2 {
+	font-size: $h2;
+}
+h3 {
+	font-size: $h3;
+}
+h4 {
+	font-size: $h4;
+}
+h5 {
+	font-size: $h5;
+}
+h6 {
+	font-size: $h6;
+}
+p {
+	font-size: $p;
+}
+
+.icono {
+	font-size: $tamaño-iconos;
+	color: $color-blanco;
+}
