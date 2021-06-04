@@ -85,13 +85,15 @@ header {
 			margin: 2.5rem 0;
 			&:hover {
 				transform: scale(1.2);
+				text-decoration: underline;
 			}
 		}
 	}
 	.mas {
 		transform: scale(1);
+
 		transition-duration: 1s;
-		transform-origin: top;
+		transform-origin: center;
 	}
 	.icono--menu {
 		width: 1.5rem;
