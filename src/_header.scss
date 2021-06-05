@@ -1,5 +1,5 @@
 header {
-	height: 100vh;
+	height: 110vh;
 	width: 100%;
 	background-image: url(C:\Users\israe\OneDrive\Escritorio\PROYECTOS\hotel-philidor\src\static\fondo-header.jpg);
 	background-position: center;
@@ -25,6 +25,7 @@ header {
 		left: 0;
 		bottom: 0;
 		padding: 1rem;
+		z-index: 90;
 	}
 	.bloque-titulo {
 		width: 100%;
@@ -70,11 +71,10 @@ header {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
+		z-index: 10;
 		flex-wrap: wrap;
 		transform: scale(0);
-		position: absolute;
-
+		position: fixed;
 		a {
 			text-decoration: none;
 			font-size: 1.5rem;
@@ -87,6 +87,9 @@ header {
 				transform: scale(1.2);
 				text-decoration: underline;
 			}
+			&:nth-child(1) {
+				margin-top: 1rem;
+			}
 		}
 	}
 	.mas {
@@ -94,6 +97,9 @@ header {
 
 		transition-duration: 1s;
 		transform-origin: center;
+	}
+	.menos {
+		transform: scale(0);
 	}
 	.icono--menu {
 		width: 1.5rem;

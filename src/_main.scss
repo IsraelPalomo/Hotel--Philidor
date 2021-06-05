@@ -1,0 +1,144 @@
+main {
+	.reservas {
+		width: 80%;
+		height: 23rem;
+		margin: 0 auto;
+		background-color: $color-primario;
+		position: relative;
+		bottom: 20px;
+		max-width: 30rem;
+		z-index: 0;
+
+		form {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			input {
+				margin: 0 25%;
+			}
+
+			p {
+				&:first-child {
+					margin-top: 2rem;
+				}
+				display: block;
+				width: 100%;
+				text-align: center;
+				color: $color-blanco;
+				font-family: $tipografia-roboto;
+			}
+			.reservas__personas {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 1rem;
+				margin-top: 1rem;
+				width: 100%;
+
+				.reservas__personas--adultos {
+					display: flex;
+					flex-wrap: wrap;
+					margin-left: 0.8rem;
+					justify-content: center;
+
+					input {
+						margin: 0 25%;
+					}
+				}
+				.reservas__personas--pequeños {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+
+					input {
+						margin: 0 25%;
+					}
+				}
+			}
+			.reservas__enviar {
+				background-color: $color-secundario;
+				color: #ffffff;
+				font-family: $tipografia-roboto;
+				border: none;
+				width: 7rem;
+				height: 3rem;
+				position: relative;
+				top: 60px;
+				margin: 0 auto;
+			}
+		}
+	}
+	@media (min-width: 450px) {
+	}
+	@media (min-width: 650px) {
+	}
+	@media (min-width: 900px) {
+	}
+	@media (min-width: 1200px) {
+		.reservas {
+			width: 90%;
+			max-width: none;
+			height: 5rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0 2rem;
+
+			form {
+				display: flex;
+				flex-wrap: nowrap;
+				justify-content: center;
+				align-items: center;
+				gap: 1.5rem;
+				p:first-child {
+					margin-top: 0;
+				}
+				input {
+					margin: 0;
+				}
+				label {
+					margin: 0;
+				}
+				p {
+					width: auto;
+					margin: 0 auto;
+				}
+				.reservas__personas {
+					margin: 0;
+					gap: 1rem;
+
+					.reservas__personas--adultos {
+						flex-wrap: nowrap;
+						align-items: center;
+						margin: 0;
+						input {
+							margin: 0;
+						}
+						p {
+							margin: 0 10px;
+						}
+					}
+					.reservas__personas--pequeños {
+						flex-wrap: nowrap;
+						align-items: center;
+
+						margin: 0;
+						input {
+							margin: 0;
+						}
+						p {
+							margin: 0 10px;
+						}
+					}
+				}
+				.reservas__enviar {
+					position: static;
+					width: 15rem;
+				}
+			}
+		}
+	}
+	@media (min-width: 2000px) {
+	}
+}
