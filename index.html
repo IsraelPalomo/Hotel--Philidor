@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -44,10 +45,10 @@
 			<div class="bloque-titulo">
 				<hr class="header__linea header__linea-superior" />
 				<h2 class="header__titulo">Hotel</h2>
-				<h1 class="header__subTitulo" data-aos="fade-left">Philidor</h1>
+				<h1 class="header__subTitulo">Philidor</h1>
 			</div>
 
-			<hr class="header__linea header__linea-inferior" />
+			<hr id="reservas" class="header__linea header__linea-inferior" />
 			<i class="icono icono-estrella fas fa-star"></i>
 			<i class="icono icono-estrella fas fa-star"></i>
 			<i class="icono icono-estrella fas fa-star"></i>
@@ -56,7 +57,7 @@
 			<hr class="header__linea header__linea-inferior" />
 		</header>
 		<main>
-			<section class="reservas" id="reservas">
+			<section class="reservas" data-aos="zoom-in-right">
 				<form>
 					<p>Check-In</p>
 					<input type="date" name="entrada" id="entrada" required />
@@ -81,5 +82,6 @@
 				</div>
 			</section>
 		</main>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	</body>
 </html>
