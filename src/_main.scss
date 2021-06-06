@@ -69,6 +69,30 @@ main {
 			}
 		}
 	}
+	.relax {
+		overflow: hidden;
+
+		.relaxContainer {
+			background-image: url("C:/Users/israe/OneDrive/Escritorio/PROYECTOS/hotel-philidor/src/static/img1-relax.jpg");
+			background-position: bottom;
+			background-size: cover;
+			background-repeat: no-repeat;
+			clip-path: polygon(100% 23%, 100% 75%, 0 90%, 0 40%);
+			background-attachment: fixed;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 60rem;
+			h2 {
+				font-family: $tipografia-roboto;
+				color: $color-blanco;
+				position: relative;
+				top: 60px;
+			}
+		}
+	}
+
 	@media (min-width: 450px) {
 	}
 	@media (min-width: 650px) {

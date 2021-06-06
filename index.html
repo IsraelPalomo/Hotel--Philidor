@@ -26,13 +26,14 @@
 		<title>Hotel Philidor</title>
 	</head>
 	<body>
-		<header>
+		<header id="inicio">
 			<div class="menu">
 				<div class="enlaces">
-					<a href="#reservas" class="enlace__menu">Inicio</a>
-					<a href="#reservas" class="enlace__menu">Reservas</a>
-					<a href="#reservas" class="enlace__menu">Habitaciones</a>
-					<a href="#reservas" class="enlace__menu">Restaurante</a><a href="">Actividades</a>
+					<a href="#inicio" class="enlace__menu link1">Inicio</a>
+					<a href="#reservas" class="enlace__menu link2">Reservas</a>
+					<a href="#reservas" class="enlace__menu link3">Habitaciones</a>
+					<a href="#reservas" class="enlace__menu link4">Restaurante</a>
+					<a href="#reservas" class="enlace__menu link5">Actividades</a>
 				</div>
 			</div>
 			<nav class="header__navegacion">
@@ -58,21 +59,26 @@
 			<section class="reservas" id="reservas">
 				<form>
 					<p>Check-In</p>
-					<input type="date" name="entrada" id="entrada" />
+					<input type="date" name="entrada" id="entrada" required />
 					<p>Check-Out</p>
-					<input type="date" name="salida" id="salida" />
+					<input type="date" name="salida" id="salida" required />
 					<div class="reservas__personas">
 						<div class="reservas__personas--adultos">
 							<p>Adult</p>
-							<input type="number" min="1" max="7" placeholder="0" />
+							<input type="number" min="1" max="7" placeholder="0" required />
 						</div>
 						<div class="reservas__personas--pequeños">
 							<p>Children</p>
-							<input type="number" min="1" max="7" placeholder="0" />
+							<input type="number" min="1" max="7" placeholder="0" required />
 						</div>
 					</div>
 					<button class="reservas__enviar" type="submit">Search</button>
 				</form>
+			</section>
+			<section class="relax">
+				<div class="relaxContainer">
+					<h2>To Relax</h2>
+				</div>
 			</section>
 		</main>
 	</body>
