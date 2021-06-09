@@ -1,5 +1,8 @@
 import "./styles.css";
 import "./styles.scss";
+import "./static/habitacion-fischer.jpg";
+import "./static/habitacion-magnus.jpg";
+import "./static/habitacion-kasparov.jpg";
 console.log("hello world!");
 const menu = document.querySelector(".menu");
 const icono = document.querySelector(".icono--menu");

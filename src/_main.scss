@@ -143,6 +143,161 @@ main {
 		}
 	}
 
+	.restaurante {
+		margin-top: 10rem;
+		.restaurante__titulo {
+			width: 100%;
+			height: 5rem;
+			background-color: $color-primario;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: $color-blanco;
+			font-family: $tipografia-greatVibes;
+			font-weight: 100;
+			letter-spacing: 6px;
+		}
+		.restaurante__contenedor {
+			margin-top: 5rem;
+			perspective: 1500px;
+			.restaurante__card1 {
+				box-shadow: inset -20px -20px 1px red;
+				transition: 0.7s ease;
+				transform-style: preserve-3d;
+				position: relative;
+				color: $color-blanco;
+				font-family: $tipografia-greatVibes;
+				width: 90%;
+				height: 30rem;
+				background-color: $color-blanco;
+				border-radius: 15px;
+				margin: 5rem auto;
+				display: flex;
+				align-items: center;
+				text-align: center;
+
+				justify-content: center;
+				box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+					0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+					0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+				h5 {
+					background-color: $color-primario;
+					padding: 1rem;
+					letter-spacing: 4px;
+				}
+			}
+			.restaurante__card {
+				box-shadow: inset -20px -20px 1px red;
+				transition: 0.7s ease;
+				transform-style: preserve-3d;
+				position: relative;
+				color: $color-blanco;
+				font-family: $tipografia-greatVibes;
+				width: 90%;
+				height: 30rem;
+				background-color: $color-blanco;
+				border-radius: 15px;
+				margin: 5rem auto;
+				display: flex;
+				align-items: center;
+				text-align: center;
+
+				justify-content: center;
+				box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+					0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+					0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+
+				&:hover {
+					transform: rotateY(180deg);
+					transition-duration: 5s;
+				}
+				h5 {
+					background-color: $color-primario;
+					padding: 1rem;
+					letter-spacing: 4px;
+				}
+			}
+			.restaurante__card--vinos {
+				.front {
+					background-image: url("./static/vinos.jpg");
+					background-size: cover;
+					background-position: center;
+					width: 100%;
+					height: 100%;
+				}
+				.front1 {
+					background-image: url("./static/vinos.jpg");
+					background-size: cover;
+					background-position: center;
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.restaurante__card--platos {
+				.front {
+					background-image: url("./static/platos.jpg");
+					background-size: cover;
+					background-position: center;
+					width: 100%;
+					height: 100%;
+				}
+				.front1 {
+					background-image: url("./static/platos.jpg");
+					background-size: cover;
+					background-position: center;
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.restaurante__card--postres {
+				.front {
+					background-image: url("./static/postres.jpg");
+					background-size: cover;
+					background-position: center;
+					width: 100%;
+					height: 100%;
+				}
+				.front1 {
+					background-image: url("./static/postres.jpg");
+					background-size: cover;
+					background-position: center;
+					width: 50%;
+					height: 100%;
+				}
+			}
+			.front,
+			.atras {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				border-radius: 15px;
+				.floritura {
+					width: 50%;
+					color: $color-blanco;
+					margin: 0 auto;
+					max-width: 15rem;
+				}
+			}
+			.atras {
+				transform: rotateY(180deg);
+				backface-visibility: hidden;
+				background-color: $color-primario;
+				display: grid;
+				grid-template-columns: 1;
+				align-items: center;
+				li {
+					display: block;
+					font-size: 1.5rem;
+				}
+			}
+			.front {
+				backface-visibility: hidden;
+			}
+		}
+	}
+
 	@media (min-width: 450px) {
 	}
 	@media (min-width: 650px) {
