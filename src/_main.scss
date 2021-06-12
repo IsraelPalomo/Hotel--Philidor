@@ -209,7 +209,8 @@ main {
 
 				&:hover {
 					transform: rotateY(180deg);
-					transition-duration: 5s;
+					transition-duration: 3s;
+					cursor: pointer;
 				}
 				h5 {
 					background-color: $color-primario;
@@ -225,23 +226,9 @@ main {
 					width: 100%;
 					height: 100%;
 				}
-				.front1 {
-					background-image: url("./static/vinos.jpg");
-					background-size: cover;
-					background-position: center;
-					width: 100%;
-					height: 100%;
-				}
 			}
 			.restaurante__card--platos {
 				.front {
-					background-image: url("./static/platos.jpg");
-					background-size: cover;
-					background-position: center;
-					width: 100%;
-					height: 100%;
-				}
-				.front1 {
 					background-image: url("./static/platos.jpg");
 					background-size: cover;
 					background-position: center;
@@ -257,13 +244,6 @@ main {
 					width: 100%;
 					height: 100%;
 				}
-				.front1 {
-					background-image: url("./static/postres.jpg");
-					background-size: cover;
-					background-position: center;
-					width: 50%;
-					height: 100%;
-				}
 			}
 			.front,
 			.atras {
@@ -277,6 +257,12 @@ main {
 					width: 50%;
 					color: $color-blanco;
 					margin: 0 auto;
+					max-width: 15rem;
+				}
+				.floritura2 {
+					width: 50%;
+					transform: rotate(180deg);
+					margin: 1rem auto;
 					max-width: 15rem;
 				}
 			}
@@ -296,11 +282,177 @@ main {
 				backface-visibility: hidden;
 			}
 		}
+		.CONTENEDOR2 {
+			display: none;
+			.restaurante__contenedor2 {
+				margin-top: 5rem;
+
+				.vinos {
+					width: 95%;
+					height: 25rem;
+					display: flex;
+					margin: 0 auto;
+					box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+						0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+						0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+					border-radius: 15px;
+					margin-bottom: 3rem;
+
+					.foto {
+						background-image: url("./static/vinos.jpg");
+						background-size: cover;
+						background-position: center;
+						width: 50%;
+						border-radius: 15px 0 0 15px;
+						h5 {
+							background-color: $color-primario;
+							padding: 1rem;
+							letter-spacing: 4px;
+							width: 80%;
+							color: $color-blanco;
+							font-family: $tipografia-greatVibes;
+							letter-spacing: 7px;
+						}
+					}
+					.carta {
+						width: 50%;
+						background-color: $color-primario;
+						border-radius: 0 15px 15px 0;
+						color: $color-blanco;
+						text-align: center;
+						list-style: none;
+						display: grid;
+						grid-template-columns: 1;
+
+						.floritura {
+							width: 50%;
+
+							margin: 1rem auto;
+							max-width: 15rem;
+						}
+						.floritura2 {
+							width: 50%;
+							transform: rotate(180deg);
+							margin: 1rem auto;
+							max-width: 15rem;
+						}
+					}
+				}
+				.platos {
+					width: 95%;
+					height: 25rem;
+					display: flex;
+					margin: 0 auto;
+					box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+						0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+						0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+					border-radius: 15px;
+					margin-bottom: 3rem;
+					.foto {
+						background-image: url("./static/platos.jpg");
+						background-size: cover;
+						background-position: center;
+						width: 50%;
+						border-radius: 15px 0 0 15px;
+						h5 {
+							background-color: $color-primario;
+							padding: 1rem;
+							letter-spacing: 4px;
+							width: 80%;
+							color: $color-blanco;
+							font-family: $tipografia-greatVibes;
+							letter-spacing: 7px;
+						}
+					}
+					.carta {
+						width: 50%;
+						background-color: $color-primario;
+						border-radius: 0 15px 15px 0;
+						color: $color-blanco;
+						text-align: center;
+						list-style: none;
+						display: grid;
+						grid-template-columns: 1;
+
+						.floritura {
+							width: 50%;
+
+							margin: 1rem auto;
+							max-width: 15rem;
+						}
+						.floritura2 {
+							width: 50%;
+							transform: rotate(180deg);
+							margin: 1rem auto;
+							max-width: 15rem;
+						}
+					}
+				}
+				.postres {
+					width: 95%;
+					height: 25rem;
+					display: flex;
+					margin: 0 auto;
+					box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+						0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+						0 41.8px 33.4px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+					border-radius: 15px;
+					margin-top: 3rem;
+					.foto {
+						background-image: url("./static/postres.jpg");
+						background-size: cover;
+						background-position: center;
+						width: 50%;
+						border-radius: 15px 0 0 15px;
+						h5 {
+							background-color: $color-primario;
+							padding: 1rem;
+							letter-spacing: 4px;
+							width: 80%;
+							color: $color-blanco;
+							font-family: $tipografia-greatVibes;
+							letter-spacing: 7px;
+						}
+					}
+					.carta {
+						width: 50%;
+						background-color: $color-primario;
+						border-radius: 0 15px 15px 0;
+						color: $color-blanco;
+						text-align: center;
+						list-style: none;
+						display: grid;
+						grid-template-columns: 1;
+
+						.floritura {
+							width: 50%;
+
+							margin: 1rem auto;
+							max-width: 15rem;
+						}
+						.floritura2 {
+							width: 50%;
+							transform: rotate(180deg);
+							margin: 1rem auto;
+							max-width: 15rem;
+						}
+					}
+				}
+			}
+		}
 	}
 
 	@media (min-width: 450px) {
 	}
 	@media (min-width: 650px) {
+		.restaurante__contenedor {
+			display: none;
+		}
+		#restaurante {
+			.CONTENEDOR2 {
+				display: block;
+			}
+		}
 	}
 	@media (min-width: 900px) {
 	}
