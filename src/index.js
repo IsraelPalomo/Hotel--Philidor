@@ -11,6 +11,7 @@ const enlaceMenu2 = document.querySelector(".link2");
 const enlaceMenu3 = document.querySelector(".link3");
 const enlaceMenu4 = document.querySelector(".link4");
 const enlaceMenu5 = document.querySelector(".link5");
+const enlaceMenu6 = document.querySelector(".link6");
 
 function grande() {
 	icono.addEventListener("click", () => {
@@ -39,6 +40,11 @@ function grande() {
 		menu.classList.toggle("mas");
 	});
 	enlaceMenu5.addEventListener("click", () => {
+		menu.classList.toggle("menos");
+		icono.classList.remove("cruz");
+		menu.classList.toggle("mas");
+	});
+	enlaceMenu6.addEventListener("click", () => {
 		menu.classList.toggle("menos");
 		icono.classList.remove("cruz");
 		menu.classList.toggle("mas");
