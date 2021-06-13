@@ -3,8 +3,57 @@ footer {
 	width: 100%;
 	height: 35rem;
 	background-color: $color-secundario;
-	h1 {
+	padding-top: 2rem;
+
+	img {
+		width: 7rem;
+		height: 9rem;
+		display: block;
+		margin: 0 auto 0 auto;
+
+		border-radius: 25px;
+	}
+	h6 {
 		color: white;
 		text-align: center;
+		font-family: $tipografia-roboto;
 	}
+	p {
+		color: white;
+		text-align: center;
+		letter-spacing: 5px;
+		font-family: $tipografia-roboto;
+	}
+	.sociales__1 {
+		display: flex;
+		justify-content: center;
+		margin-top: 5rem;
+		gap: 1.5rem;
+	}
+	.sociales__2 {
+		display: flex;
+		justify-content: center;
+		gap: 1.5rem;
+		margin-top: 2rem;
+	}
+	i {
+		color: $color-blanco;
+		font-size: 1.5rem;
+	}
+	hr {
+		border: none;
+		height: 1px;
+		margin-top: 2rem;
+		background-color: white;
+	}
+}
+.copyright {
+	color: $color-blanco;
+	text-align: center;
+	background-color: $color-primario;
+	width: 100%;
+	height: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
