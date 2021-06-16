@@ -114,13 +114,14 @@ main {
 			justify-content: center;
 			align-items: center;
 			color: $color-blanco;
-			font-family: $tipografia-greatVibes;
+			font-family: $tipografia-roboto;
 			font-weight: 100;
 			letter-spacing: 6px;
+			text-align: center;
 		}
 		.habitaciones__habitacion {
 			padding: 2.5rem 1rem;
-			margin-top: 3rem;
+			margin-top: 5rem;
 			width: 80%;
 			max-width: 50rem;
 			display: flex;
@@ -150,7 +151,7 @@ main {
 	}
 
 	.restaurante {
-		margin-top: 10rem;
+		margin-top: 5rem;
 		.restaurante__titulo {
 			width: 100%;
 			height: 5rem;
@@ -159,7 +160,7 @@ main {
 			justify-content: center;
 			align-items: center;
 			color: $color-blanco;
-			font-family: $tipografia-greatVibes;
+			font-family: $tipografia-roboto;
 			font-weight: 100;
 			letter-spacing: 6px;
 		}
@@ -172,7 +173,7 @@ main {
 				transform-style: preserve-3d;
 				position: relative;
 				color: $color-blanco;
-				font-family: $tipografia-greatVibes;
+				font-family: $tipografia-roboto;
 				width: 90%;
 				height: 30rem;
 				background-color: $color-blanco;
@@ -198,7 +199,7 @@ main {
 				transform-style: preserve-3d;
 				position: relative;
 				color: $color-blanco;
-				font-family: $tipografia-greatVibes;
+				font-family: $tipografia-roboto;
 				width: 90%;
 				height: 30rem;
 				background-color: $color-blanco;
@@ -316,7 +317,7 @@ main {
 							letter-spacing: 4px;
 							width: 80%;
 							color: $color-blanco;
-							font-family: $tipografia-greatVibes;
+							font-family: $tipografia-roboto;
 							letter-spacing: 7px;
 						}
 					}
@@ -366,7 +367,7 @@ main {
 							letter-spacing: 4px;
 							width: 80%;
 							color: $color-blanco;
-							font-family: $tipografia-greatVibes;
+							font-family: $tipografia-roboto;
 							letter-spacing: 7px;
 						}
 					}
@@ -416,7 +417,7 @@ main {
 							letter-spacing: 4px;
 							width: 80%;
 							color: $color-blanco;
-							font-family: $tipografia-greatVibes;
+							font-family: $tipografia-roboto;
 							letter-spacing: 7px;
 						}
 					}
@@ -467,7 +468,7 @@ main {
 				padding: 0;
 				display: flex;
 				width: 500%;
-				animation: cambio 25s infinite;
+				animation: cambio 15s infinite;
 				margin: 5rem 0;
 			}
 			li {

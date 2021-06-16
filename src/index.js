@@ -60,9 +60,11 @@ function grande() {
 grande();
 AOS.init();
 
-var mapsipe = L.map("map").setView([-16.578193, 179.414413], 9);
+let mapsipe = L.map("map").setView([-16.578193, 179.414413], 9);
 L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 	attribution:
 		'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
 	maxZoom: 18,
 }).addTo(mapsipe);
+
+L.marker([-16.578193, 179.414413]).addTo(mapsipe);
